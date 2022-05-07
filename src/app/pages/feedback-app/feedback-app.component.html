@@ -1,0 +1,40 @@
+<div class="container">
+
+    <div class="card">
+
+        <ul class="rating">
+            <li>
+                <input type="radio" [(ngModel)]="rating" value="1" id="1">
+                <label for="1">1</label>
+            </li>
+            <li>
+                <input type="radio" [(ngModel)]="rating" value="2" id="2">
+                <label for="2">2</label>
+            </li>
+            <li>
+                <input type="radio" [(ngModel)]="rating" value="3" id="3">
+                <label for="3">3</label>
+            </li>
+            <li>
+                <input type="radio" [(ngModel)]="rating" value="4" id="4">
+                <label for="4">4</label>
+            </li>
+            <li>
+                <input type="radio" [(ngModel)]="rating" value="5" id="5">
+                <label for="5">5</label>
+            </li>
+        </ul>
+        <div class="input-group">
+            <input type="text" [(ngModel)]="text">
+            <button class="btn btn-secondary" (click)="add()">send</button>
+        </div>
+    </div>
+
+    <div class="card" *ngFor="let feedback of items;let i=index">
+        <div class="close" (click)="delete(i)">Delete</div>
+        <h3 class="num-display">
+            {{ feedback.rating }}
+        </h3>
+        {{ feedback.text }}
+    </div>
+</div>
