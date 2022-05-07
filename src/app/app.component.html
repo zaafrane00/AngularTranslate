@@ -1,2 +1,8 @@
-<h2>{{"title"|translate}}</h2>
+<div style="text-align: center;">
+    <h2>{{"title"|translate}}</h2>
+    <button class="btn btn-primary" (click)="changeLang('en')"
+        *ngIf="translate.currentLang !='en'">English </button>
+    <button class="btn btn-primary" (click)="changeLang('fr')"
+        *ngIf="translate.currentLang !='fr'">Francais </button>
+</div>
 <app-feedback-app></app-feedback-app>
