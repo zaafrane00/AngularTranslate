@@ -1,0 +1,11 @@
+{
+    "title": "Seance 1",
+    "text":"Application feedback",
+     "send":"Envoyer",
+    "feedback":{
+        "supp":"Supprimer",
+        "edit":"Modifier",
+        "add":"Ajouter"
+    }
+
+}

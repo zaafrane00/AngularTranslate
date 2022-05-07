@@ -28,8 +28,8 @@ export function createTranslateLoader(http: HttpClient) {
         provide: TranslateLoader,
         useFactory: (createTranslateLoader),
         deps: [HttpClient]
-      },
-      defaultLanguage: 'en'
+      }
+      // defaultLanguage: 'en'
     })
   ],
   providers: [],

@@ -1,0 +1,11 @@
+{
+    "title": "Session 1",
+    "text":"Feedback app",
+    "send":"Send",
+    "feedback":{
+        "supp":"Delete",
+        "edit":"Edit",
+        "add":"Add"
+    }
+
+}

@@ -26,12 +26,14 @@
         </ul>
         <div class="input-group">
             <input type="text" [(ngModel)]="text">
-            <button class="btn btn-secondary" (click)="add()">send</button>
+            <button class="btn btn-secondary"
+                (click)="add()">{{'send'|translate}}</button>
         </div>
     </div>
 
     <div class="card" *ngFor="let feedback of items;let i=index">
-        <div class="close" (click)="delete(i)">Delete</div>
+        <div class="close" (click)="delete(i)">{{'feedback.supp'|translate}}
+        </div>
         <h3 class="num-display">
             {{ feedback.rating }}
         </h3>
