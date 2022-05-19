@@ -1,6 +1,10 @@
-# FirstAngular
+# Angular Translate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
+This Project is meant to showcase translation using i18n.
+
+## i18n npm installation cmd
+
+npm install angular-i18n
 
 ## Development server
 
